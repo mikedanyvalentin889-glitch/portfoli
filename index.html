@@ -844,6 +844,7 @@
             transform: translateY(-5px);
         }
     </style>
+<base target="_blank">
 </head>
 <body>
 
@@ -868,7 +869,7 @@
         <div class="hero-container">
             <div class="hero-content fade-in">
                 <h1>Maître <span>Valentin Marcelin</span></h1>
-                <div class="subtitle">Avocat au Barreau</div>
+                <div class="subtitle">Avocat</div>
                 <p>Votre défenseur de confiance, engagé à protéger vos droits et à vous accompagner avec excellence dans toutes vos démarches juridiques.</p>
                 <div class="btn-group">
                     <a href="#contact" class="btn btn-primary">Prendre Rendez-vous</a>
@@ -877,7 +878,6 @@
             </div>
             <div class="hero-image fade-in">
                 <div class="image-frame">
-                    <!-- Photo de Maître Valentin Marcelin -->
                     <img src="https://i.postimg.cc/8cRD97xk/Whats-App-Image-2026-06-28-at-12-32-37-PM.jpg" alt="Maître Valentin Marcelin - Avocat">
                 </div>
                 <div class="experience-badge">
@@ -904,7 +904,7 @@
                     <h3>Un engagement pour la justice et vos droits</h3>
                     <p>Maître Valentin Marcelin met son expertise et son dévouement au service de ses clients. Avec une approche personnalisée et rigoureuse, il analyse chaque situation avec précision pour offrir les meilleures solutions juridiques.</p>
                     <p>Sa réputation repose sur son intégrité, sa disponibilité et ses résultats probants. Qu'il s'agisse de conseil ou de contentieux, Maître Marcelin vous accompagne à chaque étape.</p>
-                    
+
                     <div class="credentials">
                         <div class="credential-item">
                             <i class="fas fa-graduation-cap"></i>
@@ -916,8 +916,8 @@
                         <div class="credential-item">
                             <i class="fas fa-certificate"></i>
                             <div>
-                                <h4>Barreau</h4>
-                                <p>Membre du Barreau de Port-au-Prince</p>
+                                <h4>Certification</h4>
+                                <p>Membre en règle de l'Ordre des Avocats</p>
                             </div>
                         </div>
                         <div class="credential-item">
@@ -1071,27 +1071,27 @@
                 <div class="contact-info fade-in">
                     <h3>Parlons de votre situation</h3>
                     <p>Chaque cas est unique. Contactez-moi pour discuter de votre situation et découvrir comment je peux vous aider.</p>
-                    
+
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <h4>Adresse du Cabinet</h4>
-                                <p>Port-au-Prince, Haïti</p>
+                                <p>#1, Rue Grégoire, Pétion-ville</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
                             <div>
                                 <h4>Téléphone</h4>
-                                <p>+509 XXXX XXXX</p>
+                                <p>+509 4823 7818</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>Email</h4>
-                                <p>contact@valentinmarcelin.ht</p>
+                                <p>Valentin.marcelin@gmail.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -1103,7 +1103,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="contact-form fade-in">
                     <form id="contactForm">
                         <div class="form-group">
@@ -1221,18 +1221,17 @@
         // Form submission
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Simulation d'envoi
+
             const btn = this.querySelector('button[type="submit"]');
             const originalText = btn.textContent;
-            
+
             btn.textContent = 'Envoi en cours...';
             btn.disabled = true;
-            
+
             setTimeout(() => {
                 btn.textContent = 'Message envoyé !';
                 btn.style.background = '#28a745';
-                
+
                 setTimeout(() => {
                     btn.textContent = originalText;
                     btn.style.background = '';
@@ -1259,7 +1258,7 @@
         // Mobile menu toggle
         const mobileMenu = document.querySelector('.mobile-menu');
         const navLinks = document.querySelector('.nav-links');
-        
+
         mobileMenu.addEventListener('click', () => {
             navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
             navLinks.style.position = 'absolute';
